@@ -2,10 +2,10 @@
 
 cd /home/dev/Dokumente/
 
-datei=find ./ -type f -name "*.sql"
+datei=find /home/dev/ -name "*.sql"
 
 # shellcheck disable=SC1072
-while [ find ./ -type f -name "*.sql" ];
+while [ find /home/dev/ -name "*.sql" ];
 do
   gzip $datei
   if [ $datei = *.gz ]
