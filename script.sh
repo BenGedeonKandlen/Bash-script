@@ -18,8 +18,3 @@ if [ $antwort == j ]; then
            fi
        done
 fi
-
-read -p "Soll der Rechner heruntergefahren werden?  -Ja[j] oder Nein[n]" antwort2
-if [ $antwort2 == j ]; then
-    shudown
-fi
