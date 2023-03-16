@@ -12,7 +12,7 @@ done
 read -p "Sollen die Original Dateien gelösch werden? -Ja[j] oder Nein[n]" antwort
 if [ $antwort == j ]; then
     for file in *.sql
-       do     #wenn Ja[j] ausgewählt wird, dann erden die gefundenen Dateien gelöscht.
+       do     #wenn Ja[j] ausgewählt wird, dann werden die gefundenen Dateien gelöscht.
            if [[ -f $file ]]; then
                rm $file
            fi
